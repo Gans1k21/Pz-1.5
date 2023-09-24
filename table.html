@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Розклад занять</title>
+  <style>
+    <body> 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Розклад занять</h1>
+    <table class="schedule">
+      <thead>
+        <tr>
+          <th>Час</th>
+          <th>Понеділок</th>
+          <th>Вівторок</th>
+          <th>Середа</th>
+          <th>Четвер</th>
+          <th>П'ятниця</th>
+          <th>Субота</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time">8:30-09:15</td>
+          <td class="subject">ФВ-парк</td>
+          <td class="<subject">Іноз.м-6</td>
+          <td class="subject">ЗВП-107</td>
+          <td class="subject">ФВ-парк</td>
+          <td class="subject">ФВ-парк</td>
+          <td class="subject">СР-406</td>
+        </tr>
+        <tr>
+          <td class="time">10:20-11:10</td>
+          <td class="subject">ФВ-парк</td>
+          <td class="<subject">Іноз.м-6</td>
+          <td class="subject">ЗВП-107</td>
+          <td class="subject">ФВ-парк</td>
+          <td class="subject">ФВ-парк</td>
+          <td class="subject">СР-406</td>
+        </tr>
+        <tr>
+          <td class="time">10:25-11:10</td>
+          <td class="subject">ЗВП-101</td>
+          <td class="subject">Право-314</td>
+          <td class="subject">ЗВП-107</td>
+          <td class="subject">Право-101</td>
+          <td class="subject">ТІМ-503</td>
+          <td class="subject">СР-406</td>
+        </tr>
+        <tr>
+          <td class="time">11:15-12:00</td>
+          <td class="subject">ЗВП-101</td>
+          <td class="subject">Право-314</td>
+          <td class="subject">ЗВП-107</td>
+          <td class="subject">Право-101</td>
+          <td class="subject">ТІМ-503</td>
+          <td class="subject">СР-406</td>
+        </tr>
+        <tr>
+          <td class="time">12:10-13:05</td>
+          <td class="subject">ТС-6</td>
+          <td class="subject">ТІК-314</td>
+          <td class="subject">Прога-503</td>
+          <td class="subject">ТС-6</td>
+          <td class="subject">ТІМ-503</td>
+          <td class="subject">СР-406</td>
+        </tr>
+        <tr>
+          <td class="time">13:10-13:55</td>
+          <td class="subject">ТС-6</td>
+          <td class="subject">ТІК-314</td>
+          <td class="subject">Прога-503</td>
+          <td class="subject">ТС-6</td>
+          <td class="subject">ТІМ-503</td>
+          <td class="subject">СР-406</td>
+        </tr>
+        <tr>
+    <td class="time">16:10-16:55</td>
+          <td class="subject">СР-101</td>
+          <td class="subject">СР-101</td>
+          <td class="subject">СР-101</td>
+          <td class="subject">Прога-101</td>
+          <td class="subject">СР-101</td>
+          <td class="subject">-----</td>
+        </tr>
+        <tr>
+    <td class="time">17:00-17:45</td>
+          <td class="subject">СР-101</td>
+          <td class="subject">СР-101</td>
+          <td class="subject">СР-101</td>
+          <td class="subject">Прога-101</td>
+          <td class="subject">СР-101</td>
+          <td class="subject">-----</td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+
+  <head>
+   <meta charset="UTF-8">
+  <title>Форма реєстрації</title>
+  <style>
+    body {
+      background-color: #e3f7e1; /* Світло салатовий фон */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button[type="submit"] {
+      background-color: #FFA500; /* Світло помаранчевий */
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .password-info {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Форма реєстрації</h1>
+    <form action="/register" method="post">
+      <label for="name">ПБІ: Імя</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="surname">Призвище</label>
+      <input type="text" id="surname" name="surname" required>
+
+      <label for="patronymic">По батькові</label>
+      <input type="text" id="patronymic" name="patronymic" required>
+
+      <label>Пол:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Чоловічий</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Жіночий</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Інше</label>
+
+      <label for="phone">Номер телефону</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="email">Електронна пошта</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">
+        Пароль (Латинські літери, цифри, "_", забороняється кирилиця та знаки "?", "№", ";", etc.)
+        <span class="password-info">Повинен містити принаймні один "_"</span>
+      </label>
+      <input type="password" id="password" name="password" pattern="[A-Za-z0-9_]+" minlength="8" maxlength="16" required>
+
+      <label for="confirmPassword">Повторити пароль</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <label for="agreement">
+        <input type="checkbox" id="agreement" name="agreement" required>
+        Я погоджуюсь з умовами реєстрації
+      </label>
+
+      <button type="submit">Зареєструватися</button>
+
+      <!-- Код для рикролу -->
+      <script>
+        // Перевіряємо, чи всі поля заповнені
+        function checkForm() {
+          // Перебираємо всі поля форми
+          for (const input of document.querySelectorAll("input[required]")) {
+            // Якщо поле не заповнене, показуємо попередження
+            if (input.value === "") {
+              input.classList.add("error");
+              return false;
+            }
+			}
+
+  // Якщо всі поля заповнені, перекидає користувача на сторінку з котиком
+  window.location.href = "https://kartynka.top/kozhen-den/yak-spravi-prikolni-kartinki";
+  return true;
+}
+
+// Додаємо обробник події до кнопки "Зареєструватися"
+document.querySelector("button[type='submit']").addEventListener("click", checkForm);
